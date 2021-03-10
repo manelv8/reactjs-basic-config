@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-modules.exports = {
+module.exports = {
   mode: isDevelopment ? "development" : "production",
   devtool: isDevelopment ? "eval-source-map" : "source-map",
   entry: path.resolve(__dirname, "src", "index.jsx"),
@@ -12,10 +12,10 @@ modules.exports = {
     filename: "bundle.js",
   },
   resolve: {
-    extensions: [".js", "jsx"],
+    extensions: [".js", ".jsx"],
   },
   devServer: {
-    contentBase: path(__dirname, "public"),
+    contentBase: path.resolve(__dirname, "public"),
   },
   plugins: [
     new HtmlWebpackPlugin({
