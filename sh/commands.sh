@@ -7,6 +7,7 @@ yarn add @babel/core @babel/cli @babel/preset-env  babel-loader @babel/preset-re
 
 ##webpack
 yarn add webpack webpack-cli webpack-dev-server html-webpack-plugin webpack-dev-server -D
+yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
 ###cssloader
 yarn add webpack style-loader css-loader -D
 ###sass loader
